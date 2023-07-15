@@ -1,0 +1,51 @@
+how to search a file based on their size?
+find /path/ -size 5M
+M fo mb
+k fo Kb
+G for Gb
+c for Byte
+
+how to find only file or only directory in the given path ?
+find /path/ -type f
+
+f for file
+d for directory
+i for symbolic link
+b for block device
+s for socket
+
+
+
+how to search a file based on its name ?
+find /path/ -name filename
+find /path/ -iname filename
+
+how to search a file for a given user only ?
+find /path/ -user root
+
+how to search a file based on their inode no ?
+find /path/ -inum <node-no-of-file>
+
+how to search a file based on their permission ?
+find /path/ perm /u=r
+find /path/ -perm 777
+
+
+
+filename which start with letter a 
+find /path/ -inum "a*"
+
+find file name which has been modified/created after a given filename ?
+find /path/ -newer last.txt
+
+search empty file
+find /path/ -empty
+
+delete empty file
+find /path/ -empty -exec rm {} /;
+
+find the file which size is lie between 1 to 50mb
+find /path/ -size +1 -size -50
+
+how to search 15 day old file
+find /path/ -mtime 15
