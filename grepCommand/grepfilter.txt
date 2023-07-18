@@ -1,0 +1,17 @@
+hello! friend
+welcome to unix / linux command
+grep filter use to search the pattern in files.
+
+grep pattern filename
+cat filename | grep pattern
+
+grep -c pattern filename : display the no of matching line
+grep -h pattern filename : display all the matching lines
+grep -l pattern * : display all the filename which contains the following pattern
+grep -n pattern filename: display all the matching line with line number.
+grep -v pattern filename : display all the non matching line
+grep -o pattern filename : display only matching pattern
+grep -e pattern filename : used for multiple searching pattern
+grep ^pattern filename : display the matching line which is start with matching pattern
+grep pattern$ filename : display the line which is end with matching pattern
+grep -i pattern filename : display all the which contain the matching pattern whether it is lowercase or uppercase.

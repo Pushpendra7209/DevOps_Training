@@ -1,0 +1,7 @@
+unix
+o
+hello
+use
+pattern 
+in
+files
