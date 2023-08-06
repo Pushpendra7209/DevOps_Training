@@ -1,0 +1,56 @@
+how to see column 2 and 3 ?
+awk '{print $2,$3}' file_name
+
+how to see last column ?
+awk '{print $NF}' file_name
+
+how to see the line number?
+awk '{print NR}' file_name
+
+how to get a column from csv file?
+awk -f, '{print $7}' file_name
+
+how to see line number with - ?
+awk '{print NR "-" $2}' file_name
+
+how to change the salary of pol ?
+awk '{if($2=="pol"){$3="90000"} print $0}' file_name
+
+how to see the data from user whose salary is more than 40000?
+awk '{if($3>40000) print $0}' file_name
+
+how to see the line who length of character is greater than 15?
+awk 'length($0)>15' file_name
+
+how to see the data of indian user?
+awk '/India/ {print $0}' file_name
+
+how to see the specific line example 3rd line ?
+awk 'NR==3 {print $0}' file_name
+
+how to see range of line 3 to 5?
+awk 'NR==3,NR==5{print $0}; file_name
+
+how to see which line is empty?
+awk 'NF==0 {print NR}' file_name
+
+how to chech the no of lines in the file?
+awk 'END {print NR}' file_name
+
+how to use for loop in awk command?
+awk 'BEGIN {for(i=0; i<=10; i++) print i;}' file_name
+
+how to use while loop in awk command ?
+awk 'BEGIN {while(i<10){i++; print i;}' file_name
+
+how to see only 2 character ?
+cut -c2 file_name
+
+how to see 1 to 4 character ?
+cut -c1-4 file_name
+
+how to see only 2 and 4 char ?
+cut -c1,4 file_name
+
+how to change the delimeter of the output?
+cut -d, -f 1- country.txt --output-delimeter="|"
